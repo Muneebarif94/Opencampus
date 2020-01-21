@@ -1,0 +1,33 @@
+<p style=“colour : blue;“> I AM BLUE.</p>
+<p style=“color : blue;“> I AM BLUE.</p>
+<h4> H1 </h4>
+<h5> H2 </h5>
+<h6> H3 </h6>
+<h7> H4 </h7><br>
+<h8> H5 </h8>
+
+ALTER TABLE packages MODIFY jsonData JSON;
+
+SELECT DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS 
+  WHERE table_name  = 'packages ' AND COLUMN_NAME  = 'jsonData';
+  
+  
+  
+curl -X POST \
+'https://api.openrouteservice.org/elevation/line' \
+-H 'Content-Type: application/json' \
+-H 'Accept: application/json, application/geo+json, application/gpx+xml, img/png; charset=utf-8' \
+-H 'Authorization: 5b3ce3597851110001cf6248bcaa9f8e93934850ad4ab363674236c5' \
+-d '{"format_in":"polyline","format_out":"encodedpolyline","geometry":[[13.349762,38.11295],[12.638397,37.645772]]}'  
+
+
+
+- Draw Ployline in leaflet 
+5 diffrent features
+1) Extracting geodata from database
+2) User registration
+3) Package registration 
+4) Static pages 
+5) 
+diff maylayer funct
+- 
